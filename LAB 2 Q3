@@ -3,33 +3,39 @@
 using namespace std;
 
 int main() {
-    char userChar1, userChar2, userChar3;
+    char char1, char2, char3;
 
-    // ask the user for a characters
+    //  asking the user to input for three characters
     cout << "Enter the first character: ";
-    cin >> userChar1;
+    cin >> char1;
 
     cout << "Enter the second character: ";
-    cin >> userChar2;
+    cin >> char2;
 
     cout << "Enter the third character: ";
-    cin >> userChar3;
+    cin >> char3;
 
-    //  here we sort the characters in ascending order
-    if (userChar1 > userChar2) {
-        swap(userChar1, userChar2);
+    // Sorting  the characters in ascending order 
+    if (char1 > char2) {
+        char temp = char1;
+        char1 = char2;
+        char2 = temp;
     }
 
-    if (userChar2 > userChar3) {
-        swap(userChar2, userChar3);
+    if (char2 > char3) {
+        char temp = char2;
+        char2 = char3;
+        char3 = temp;
     }
 
-    if (userChar1 > userChar2) {
-        swap(userChar1, userChar2);
+    if (char1 > char2) {
+        char temp = char1;
+        char1 = char2;
+        char2 = temp;
     }
 
-    // here we will see the characters in ascending order
-    cout << "The characters in ascending order are: " << userChar1 << ", " << userChar2 << ", " << userChar3 << endl;
+    //  this is going to show the output the characters in ascending order
+    cout << "The characters in ascending order are: " << char1 << ", " << char2 << ", " << char3 << endl;
 
     return 0;
 }
