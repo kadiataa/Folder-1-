@@ -1,0 +1,23 @@
+1.#include <iostream>
+
+using namespace std;
+
+int main() {
+    // herw I declared the  variable  so it stores the temperature
+    int temp;
+
+    // user should input a number for the temperature 
+    cout << "Enter today's temperature: ";
+    cin >> temp;
+
+    // the condition statment based on the input 
+    if (temp > 80) {
+        cout << "It is very hot today!" << endl;
+    } else if (temp < 40) {
+        cout << "It is very cold today!" << endl;
+    } else {
+        cout << "It is a beautiful day outside!" << endl;
+    }
+
+    return 0;
+}
