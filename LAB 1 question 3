@@ -4,7 +4,7 @@ int main() {
     //  Here im declaring the  variables to store the numbers
     double num1, num2, num3, num4;
 
-    // Prompt the user to enter the four numbers
+    // asking the user for the numbers 
     std::cout << "Enter the first number: ";
     std::cin >> num1;
 
@@ -17,13 +17,13 @@ int main() {
     std::cout << "Enter the fourth number: ";
     std::cin >> num4;
 
-    // Calculate sum
+    // here were adding everything together to get the sum 
     double sum = num1 + num2 + num3 + num4;
 
-    // Calculate average
+    // here were getting the average by dividing 
     double average = sum / 4;
 
-    // Display the average
+    // this will show us the average 
     std::cout << "The average of these numbers is: " << average << std::endl;
 
     return 0;
