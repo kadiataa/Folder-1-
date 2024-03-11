@@ -1,0 +1,29 @@
+#include <iostream>
+
+
+using namespace std;
+
+int main() {
+    
+    // Declare variables so i can store the inputs needed 
+    int NumberOfShares;
+    double PurchasePrice, CurrentPrice;
+
+    // prompting the user for inputs 
+    cout << "Enter the number of shares that was purchased: ";
+    cin >> NumberOfShares;
+
+    cout << "Enter the purchase price per share: $";
+    cin >> PurchasePrice;
+
+    cout << "Enter the current price per share: $";
+    cin >> CurrentPrice;
+
+    // Calculate profit
+   double Profit = (NumberOfShares * CurrentPrice) - (NumberOfShares * PurchasePrice);
+
+    // Output the result
+    cout << "You have made a profit of $" << Profit << " dollars since you bought " << NumberOfShares << " shares of this stock." << endl;
+
+    return 0;
+}
