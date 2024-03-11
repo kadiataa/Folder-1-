@@ -1,0 +1,77 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    cout << "Greeting today you will have the oppritunity  to the choose your own adventure game!" << endl;
+
+    // intro of the story
+    cout << "You have the option to enter doors: 'A', 'F', and 'B'. Which door do you want to explore?" << endl;
+
+    // User's first decision
+    char firstChoice;
+    cin >> firstChoice;
+
+    if (firstChoice == 'A' || firstChoice == 'a') {
+        //  if the decide to choose door A
+        cout << "You enter a magical garden. Do you want to 'explore' the garden or 'go back' to the doors?" << endl;
+
+        // the  second decision
+        string secondChoice;
+        cin >> secondChoice;
+
+        if (secondChoice == "explore") {
+            // what happens if they choose to explore  the garden
+            cout << "You discover a hidden treasure in the garden. Congratulations, you win!" << endl;
+        } else if (secondChoice == "go back") {
+            // what happens if they go  back to the doors
+            cout << "You return to the doors and choose another path." << endl;
+        } else {
+            //  if choice doesnt make sense then its a invalid choice
+            cout << "Invalid choice. Game over." << endl;
+        }
+    } else if (firstChoice == 'F' || firstChoice == 'f') {
+        // what happens for choosing door F
+        cout << "You step into a futuristic city. Do you want to 'explore' the city or 'take a spaceship' to the stars?" << endl;
+
+        // User's second decision
+        string secondChoice;
+        cin >> secondChoice;
+
+        if (secondChoice == "explore") {
+            // what happens if they decide to explore the city
+            cout << "You have a great time exploring the city. Congratulations, you win!" << endl;
+        } else if (secondChoice == "take a spaceship") {
+            // if they decide to take the spaceship
+            cout << "You embark on a cosmic journey. Along the way, you discover a new galaxy. Congratulations, you win!" << endl;
+        } else {
+            // if choice doesnt make sense its a invalid choice
+            cout << "Invalid choice. Game over." << endl;
+        }
+    } else if (firstChoice == 'B' || firstChoice == 'b') {
+        // Option for choosing door B
+        cout << "You enter a mysterious cave. Do you want to 'enter' the cave or 'turn back' to the doors?" << endl;
+
+        // User's second decision
+        string secondChoice;
+        cin >> secondChoice;
+
+        if (secondChoice == "enter") {
+            // if they decide to enter the cave
+            cout << "Inside the cave, you discover some diamond treasures. Congratulations, you win!" << endl;
+        } else if (secondChoice == "turn back") {
+            // what happens if they turn back to the doors
+            cout << "You return to the doors and choose another path." << endl;
+        } else {
+            // Invalid choice
+            cout << "Invalid choice. Game over." << endl;
+        }
+    } else {
+        // Invalid choice
+        cout << "Invalid choice. Game over." << endl;
+    }
+
+    return 0;
+}
+
