@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    // declaring the  variables so I can store the user inputs
+    string personName, adjective, noun, verb, bodyPart;
+
+    // im asking for the inputs from the user
+    cout << "Enter a person's name: ";
+    getline(cin, personName);
+
+    cout << "Enter an adjective: ";
+    getline(cin, adjective);
+
+    cout << "Enter a noun: ";
+    getline(cin, noun);
+
+    cout << "Enter a verb: ";
+    getline(cin, verb);
+
+    cout << "Enter a body part: ";
+    getline(cin, bodyPart);
+
+    //  the Madlib story is being displayed 
+    cout << personName << " decided it was time for a change, so they went to the " << adjective << " salon.\n";
+    cout << "The hairstylist suggested a new style involving a " << noun << " to " << verb << " the hair.\n";
+    cout << "As the stylist worked, " << personName << " couldn't help but admire their " << bodyPart << " skills.\n";
+    cout << personName << " left the salon feeling " << adjective << " and ready to show off their new hair!\n";
+
+    return 0;
+}
