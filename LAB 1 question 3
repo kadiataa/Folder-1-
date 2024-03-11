@@ -1,0 +1,31 @@
+#include <iostream>
+
+int main() {
+    //  Here im declaring the  variables to store the numbers
+    double num1, num2, num3, num4;
+
+    // Prompt the user to enter the four numbers
+    std::cout << "Enter the first number: ";
+    std::cin >> num1;
+
+    std::cout << "Enter the second number: ";
+    std::cin >> num2;
+
+    std::cout << "Enter the third number: ";
+    std::cin >> num3;
+
+    std::cout << "Enter the fourth number: ";
+    std::cin >> num4;
+
+    // Calculate sum
+    double sum = num1 + num2 + num3 + num4;
+
+    // Calculate average
+    double average = sum / 4;
+
+    // Display the average
+    std::cout << "The average of these numbers is: " << average << std::endl;
+
+    return 0;
+}
+
