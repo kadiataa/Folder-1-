@@ -1,0 +1,35 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    char userChar1, userChar2, userChar3;
+
+    // ask the user for a characters
+    cout << "Enter the first character: ";
+    cin >> userChar1;
+
+    cout << "Enter the second character: ";
+    cin >> userChar2;
+
+    cout << "Enter the third character: ";
+    cin >> userChar3;
+
+    //  here we sort the characters in ascending order
+    if (userChar1 > userChar2) {
+        swap(userChar1, userChar2);
+    }
+
+    if (userChar2 > userChar3) {
+        swap(userChar2, userChar3);
+    }
+
+    if (userChar1 > userChar2) {
+        swap(userChar1, userChar2);
+    }
+
+    // here we will see the characters in ascending order
+    cout << "The characters in ascending order are: " << userChar1 << ", " << userChar2 << ", " << userChar3 << endl;
+
+    return 0;
+}
