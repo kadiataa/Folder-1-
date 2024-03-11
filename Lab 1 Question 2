@@ -1,22 +1,22 @@
 #include <iostream>
 
 int main() {
-    // Declare variables to store the numbers
+    //  Here we are declaring variables so i can store them to use later 
     double num1 = 578;
     double num2 = 986;
     double num3 = 1066;
     double num4 = 714;
 
-    // Calculate sum
+    // were adding the numbers up to find the sum
     double sum = num1 + num2 + num3 + num4;
 
-    // Calculate average
+    // the average 
     double average = sum / 4;
 
-    // Display sum
+    // here were displaying the sum 
     std::cout << "The sum of those numbers is " << sum << "." << std::endl;
 
-    // Display average
+    // showing the average 
     std::cout << "The average of those numbers is " << average << "." << std::endl;
 
     return 0;
