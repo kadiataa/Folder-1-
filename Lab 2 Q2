@@ -1,0 +1,34 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    // declaring the variable 
+    double userIncome;
+
+    // asking the user for their income
+    cout << "Enter your annual income: $";
+    cin >> userIncome;
+
+    // use formula given to calculate tax on income 
+    double taxPaid;
+
+    if (userIncome <= 12000) {
+        taxPaid = userIncome * 0.06;
+    } else if (userIncome <= 38000) {
+        taxPaid = 12000 * 0.06 + (userIncome - 12000) * 0.27;
+    } else if (userIncome <= 55000) {
+        taxPaid = 12000 * 0.06 + (38000 - 12000) * 0.27 + (userIncome - 38000) * 0.33;
+    } else {
+        taxPaid = 12000 * 0.06 + (38000 - 12000) * 0.27 + (55000 - 38000) * 0.33 + (userIncome - 55000) * 0.39;
+    }
+
+    // Calculate net income after taxes
+    double netIncome = userIncome - taxPaid;
+
+    // showing the results 
+    cout << "This year you paid $" << taxPaid << " dollars in tax." << endl;
+    cout << "So your net income after taxes are taken out is $" << netIncome << "." << endl;
+
+    return 0;
+}
